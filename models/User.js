@@ -19,11 +19,11 @@ const userSchema = new Schema(
     thoughts: [thoughtSchema],
   },
   {
-    friends: [userSchema],
+    friends: [this],
     },
 );
 
-const friendCount = schema.virtual('friendCount');
+const friendCount = userSchema.virtual('friendCount');
 friendCount.get(function() {
   return this.friends.length;
 });
