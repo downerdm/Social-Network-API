@@ -1,5 +1,4 @@
 const { Schema, model, default: mongoose } = require('mongoose');
-const thoughtSchema = require('./Thoughts');
 
 // Schema to create User model
 const userSchema = new Schema(
@@ -16,10 +15,20 @@ const userSchema = new Schema(
       unique: true,
       match: /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/,
     },
-    thoughts: [thoughtSchema],
+    thoughts: [{
+      type: Schema.Types.ObjectId,
+      ref: 'Thought'
+    }],
+    friends: [{
+      type: Schema.Types.ObjectId,
+      ref: 'User'
+    }],
   },
   {
-    friends: [this],
+    toJSON: {
+      virtuals: true,
+    },
+    id: false,
     },
 );
 
