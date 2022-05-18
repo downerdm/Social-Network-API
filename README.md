@@ -2,7 +2,7 @@
 
 ## The Task
 
-The Challenge was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I was to use Express.js for routing, a MongoDB database, and the Mongoose ODM. In addition to using the [Express.js](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose) packages.
+The Challenge was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list. I was to use Express.js for routing, a MongoDB database, and the Mongoose ODM, as well as [Express.js](https://www.npmjs.com/package/express) and [Mongoose](https://www.npmjs.com/package/mongoose) packages.
 
 My models and API routes were set up following the outlined guidelines.
 
@@ -42,6 +42,10 @@ API Setup in Insomnia
 
 Get All Users API in Insomnia
 ![Get All Users API](./assets/images/GetAllUsers.png)
+
+## Walkthrough Videos
+
+Video 1: <https://drive.google.com/file/d/108rQfKXDpRiPU-rqNx3Dfsi_pYyc7d_O/view?usp=sharing>
 
 ## GitHub Repository
 
