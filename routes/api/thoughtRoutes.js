@@ -2,7 +2,7 @@ const router = require('express').Router();
 const {
   getAllThoughts,
   getThoughtsById,
-  createNewThought, //push created thought's_id to associated user's thoughts array field
+  createNewThought,
   updateThought,
   deleteThought,
   createNewReaction,

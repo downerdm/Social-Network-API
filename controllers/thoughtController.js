@@ -6,7 +6,9 @@ module.exports = {
   getAllThoughts(req, res) {
     Thoughts.find()
       .then((thoughts) => res.json(thoughts))
-      .catch((err) => res.status(500).json(err));
+      .catch((err) => {
+        console.log(err);
+        res.status(500).json(err)});
   },
 
   // Get a thought by its id
@@ -16,7 +18,7 @@ module.exports = {
       .then((thought) =>
         !thought
           ? res.status(404).json({ message: 'No thought with that ID' })
-          : res.json(course)
+          : res.json(thought)
       )
       .catch((err) => res.status(500).json(err));
   },
@@ -27,7 +29,7 @@ module.exports = {
       .then((thought) => {
         User.findOneAndUpdate(
           { username: req.body.username }, 
-          { $addToSet: { thoughts: req.params.thought } },
+          { $addToSet: { thoughts: thought } },
           { runValidators: true, new: true }
       ) .then ((thought) => res.json(thought))
         })
@@ -79,7 +81,7 @@ createNewReaction(req, res) {
         ? res
             .status(404)
             .json({ message: 'No thought found with that ID :(' })
-        : res.json(user)
+        : res.json(thought)
     )
     .catch((err) => res.status(500).json(err));
 },
