@@ -45,8 +45,8 @@ Get All Users API in Insomnia
 
 ## Walkthrough Videos
 
-Video 1: <https://drive.google.com/file/d/108rQfKXDpRiPU-rqNx3Dfsi_pYyc7d_O/view?usp=sharing>
-Video 2: <https://drive.google.com/file/d/1NfgiHdxRywrq8J94kCi9iJ1Ab8B9ZO-i/view?usp=sharing>
+- Video 1: <https://drive.google.com/file/d/108rQfKXDpRiPU-rqNx3Dfsi_pYyc7d_O/view?usp=sharing>
+- Video 2: <https://drive.google.com/file/d/1NfgiHdxRywrq8J94kCi9iJ1Ab8B9ZO-i/view?usp=sharing>
 
 ## GitHub Repository
 
