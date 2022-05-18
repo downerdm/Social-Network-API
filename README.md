@@ -35,13 +35,13 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 ## Screenshots
 
 File Structure
-![The file structure created in Visual Studio](./Assets/images/FileStructure_VS.png)
+![The file structure created in Visual Studio](./assets/images/FileStructure_VS.png)
 
 API Setup in Insomnia
-![API setup in Insomnia](./Assets/images/API_Insomnia.png)
+![API setup in Insomnia](./assets/images/API_Insomnia.png)
 
 Get All Users API in Insomnia
-![Get All Users API](./Assets/images/GetAllUsers.png)
+![Get All Users API](./assets/images/GetAllUsers.png)
 
 ## GitHub Repository
 
